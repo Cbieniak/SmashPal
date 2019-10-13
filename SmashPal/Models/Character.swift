@@ -1,5 +1,5 @@
 //
-//  Character+CoreDataProperties.swift
+//  Character+CoreDataClass.swift
 //  SmashPal
 //
 //  Created by ChristianBieniak on 10/10/19.
@@ -10,6 +10,33 @@
 import Foundation
 import CoreData
 
+protocol CharacterModel {
+    var name: String? { get set }
+    var dateCreated: Date? { get set }
+    var dateUpdated: Date? { get set }
+    var villianNotes: NSSet? { get set }
+    var heroNotes: NSSet? { get set }
+}
+
+
+@objc(Character)
+public class Character: NSManagedObject, CharacterModel {
+
+}
+
+
+public struct MockCharacter: CharacterModel {
+    var name: String?
+    
+    var dateCreated: Date?
+    
+    var dateUpdated: Date?
+    
+    var villianNotes: NSSet?
+    
+    var heroNotes: NSSet?
+
+}
 
 extension Character {
 

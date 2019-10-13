@@ -15,12 +15,13 @@
 		C61D8E21234F2D5300904789 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C61D8E20234F2D5300904789 /* Preview Assets.xcassets */; };
 		C61D8E24234F2D5300904789 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C61D8E22234F2D5300904789 /* LaunchScreen.storyboard */; };
 		C61D8E2F234F2D5300904789 /* SmashPalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61D8E2E234F2D5300904789 /* SmashPalTests.swift */; };
-		C6B6CDBE234F38EB00F24198 /* Character+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B6CDB8234F38EB00F24198 /* Character+CoreDataClass.swift */; };
-		C6B6CDBF234F38EB00F24198 /* Character+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B6CDB9234F38EB00F24198 /* Character+CoreDataProperties.swift */; };
-		C6B6CDC0234F38EB00F24198 /* Note+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B6CDBA234F38EB00F24198 /* Note+CoreDataClass.swift */; };
-		C6B6CDC1234F38EB00F24198 /* Note+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B6CDBB234F38EB00F24198 /* Note+CoreDataProperties.swift */; };
-		C6B6CDC2234F38EB00F24198 /* CharacterNote+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B6CDBC234F38EB00F24198 /* CharacterNote+CoreDataClass.swift */; };
-		C6B6CDC3234F38EB00F24198 /* CharacterNote+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B6CDBD234F38EB00F24198 /* CharacterNote+CoreDataProperties.swift */; };
+		C68FA90D2352EC8F008CA3E3 /* CharacterRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68FA90C2352EC8F008CA3E3 /* CharacterRow.swift */; };
+		C68FA90F2352ED27008CA3E3 /* CharacterList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68FA90E2352ED27008CA3E3 /* CharacterList.swift */; };
+		C68FA9112352ED66008CA3E3 /* CharacterNoteList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68FA9102352ED66008CA3E3 /* CharacterNoteList.swift */; };
+		C68FA9132352EDAD008CA3E3 /* NoteDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68FA9122352EDAD008CA3E3 /* NoteDetail.swift */; };
+		C6B6CDBE234F38EB00F24198 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B6CDB8234F38EB00F24198 /* Character.swift */; };
+		C6B6CDC0234F38EB00F24198 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B6CDBA234F38EB00F24198 /* Note.swift */; };
+		C6B6CDC2234F38EB00F24198 /* CharacterNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B6CDBC234F38EB00F24198 /* CharacterNote.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,12 +48,13 @@
 		C61D8E2E234F2D5300904789 /* SmashPalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmashPalTests.swift; sourceTree = "<group>"; };
 		C61D8E30234F2D5300904789 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C61D8E39234F2DCF00904789 /* SmashPal.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SmashPal.entitlements; sourceTree = "<group>"; };
-		C6B6CDB8234F38EB00F24198 /* Character+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Character+CoreDataClass.swift"; sourceTree = "<group>"; };
-		C6B6CDB9234F38EB00F24198 /* Character+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Character+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		C6B6CDBA234F38EB00F24198 /* Note+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataClass.swift"; sourceTree = "<group>"; };
-		C6B6CDBB234F38EB00F24198 /* Note+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		C6B6CDBC234F38EB00F24198 /* CharacterNote+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CharacterNote+CoreDataClass.swift"; sourceTree = "<group>"; };
-		C6B6CDBD234F38EB00F24198 /* CharacterNote+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CharacterNote+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C68FA90C2352EC8F008CA3E3 /* CharacterRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRow.swift; sourceTree = "<group>"; };
+		C68FA90E2352ED27008CA3E3 /* CharacterList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterList.swift; sourceTree = "<group>"; };
+		C68FA9102352ED66008CA3E3 /* CharacterNoteList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterNoteList.swift; sourceTree = "<group>"; };
+		C68FA9122352EDAD008CA3E3 /* NoteDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetail.swift; sourceTree = "<group>"; };
+		C6B6CDB8234F38EB00F24198 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		C6B6CDBA234F38EB00F24198 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		C6B6CDBC234F38EB00F24198 /* CharacterNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterNote.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,11 +96,11 @@
 		C61D8E13234F2D4A00904789 /* SmashPal */ = {
 			isa = PBXGroup;
 			children = (
+				C68FA90B2352EC77008CA3E3 /* Views */,
 				C6B6CDAB234F367400F24198 /* Models */,
 				C61D8E39234F2DCF00904789 /* SmashPal.entitlements */,
 				C61D8E14234F2D4A00904789 /* AppDelegate.swift */,
 				C61D8E16234F2D4A00904789 /* SceneDelegate.swift */,
-				C61D8E1B234F2D4A00904789 /* ContentView.swift */,
 				C61D8E1D234F2D5300904789 /* Assets.xcassets */,
 				C61D8E22234F2D5300904789 /* LaunchScreen.storyboard */,
 				C61D8E25234F2D5300904789 /* Info.plist */,
@@ -125,15 +127,24 @@
 			path = SmashPalTests;
 			sourceTree = "<group>";
 		};
+		C68FA90B2352EC77008CA3E3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C61D8E1B234F2D4A00904789 /* ContentView.swift */,
+				C68FA90C2352EC8F008CA3E3 /* CharacterRow.swift */,
+				C68FA90E2352ED27008CA3E3 /* CharacterList.swift */,
+				C68FA9102352ED66008CA3E3 /* CharacterNoteList.swift */,
+				C68FA9122352EDAD008CA3E3 /* NoteDetail.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		C6B6CDAB234F367400F24198 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				C6B6CDB8234F38EB00F24198 /* Character+CoreDataClass.swift */,
-				C6B6CDB9234F38EB00F24198 /* Character+CoreDataProperties.swift */,
-				C6B6CDBA234F38EB00F24198 /* Note+CoreDataClass.swift */,
-				C6B6CDBB234F38EB00F24198 /* Note+CoreDataProperties.swift */,
-				C6B6CDBC234F38EB00F24198 /* CharacterNote+CoreDataClass.swift */,
-				C6B6CDBD234F38EB00F24198 /* CharacterNote+CoreDataProperties.swift */,
+				C6B6CDB8234F38EB00F24198 /* Character.swift */,
+				C6B6CDBA234F38EB00F24198 /* Note.swift */,
+				C6B6CDBC234F38EB00F24198 /* CharacterNote.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -239,16 +250,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C68FA90D2352EC8F008CA3E3 /* CharacterRow.swift in Sources */,
 				C61D8E15234F2D4A00904789 /* AppDelegate.swift in Sources */,
-				C6B6CDC1234F38EB00F24198 /* Note+CoreDataProperties.swift in Sources */,
-				C6B6CDC0234F38EB00F24198 /* Note+CoreDataClass.swift in Sources */,
+				C68FA9132352EDAD008CA3E3 /* NoteDetail.swift in Sources */,
+				C68FA90F2352ED27008CA3E3 /* CharacterList.swift in Sources */,
+				C6B6CDC0234F38EB00F24198 /* Note.swift in Sources */,
 				C61D8E17234F2D4A00904789 /* SceneDelegate.swift in Sources */,
-				C6B6CDC2234F38EB00F24198 /* CharacterNote+CoreDataClass.swift in Sources */,
+				C6B6CDC2234F38EB00F24198 /* CharacterNote.swift in Sources */,
+				C68FA9112352ED66008CA3E3 /* CharacterNoteList.swift in Sources */,
 				C61D8E1C234F2D4A00904789 /* ContentView.swift in Sources */,
 				C61D8E1A234F2D4A00904789 /* SmashPal.xcdatamodeld in Sources */,
-				C6B6CDBE234F38EB00F24198 /* Character+CoreDataClass.swift in Sources */,
-				C6B6CDBF234F38EB00F24198 /* Character+CoreDataProperties.swift in Sources */,
-				C6B6CDC3234F38EB00F24198 /* CharacterNote+CoreDataProperties.swift in Sources */,
+				C6B6CDBE234F38EB00F24198 /* Character.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
