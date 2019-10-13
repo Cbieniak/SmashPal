@@ -1,4 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="true" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14903" systemVersion="19A583" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
+    <entity name="Character" representedClassName="Character" syncable="YES">
+        <attribute name="dateCreated" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="dateUpdated" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="heroNotes" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="CharacterNote" inverseName="hero" inverseEntity="CharacterNote"/>
+        <relationship name="villianNotes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CharacterNote" inverseName="villan" inverseEntity="CharacterNote"/>
+    </entity>
+    <entity name="CharacterNote" representedClassName="CharacterNote" syncable="YES">
+        <relationship name="hero" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Character" inverseName="heroNotes" inverseEntity="Character"/>
+        <relationship name="note" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Note" inverseName="characterNote" inverseEntity="Note"/>
+        <relationship name="villan" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Character" inverseName="villianNotes" inverseEntity="Character"/>
+    </entity>
+    <entity name="Note" representedClassName="Note" syncable="YES">
+        <attribute name="dateCreated" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="dateUpdated" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="noteText" optional="YES" attributeType="String" defaultValueString=""/>
+        <relationship name="characterNote" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CharacterNote" inverseName="note" inverseEntity="CharacterNote"/>
+    </entity>
+    <elements>
+        <element name="Character" positionX="-63" positionY="-18" width="128" height="118"/>
+        <element name="Note" positionX="-54" positionY="-9" width="128" height="103"/>
+        <element name="CharacterNote" positionX="-45" positionY="54" width="128" height="88"/>
+    </elements>
 </model>
