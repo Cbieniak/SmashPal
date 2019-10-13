@@ -10,15 +10,6 @@
 import Foundation
 import CoreData
 
-protocol NoteModel: ObservableObject {
-    associatedtype CharacterNoteType: CharacterNoteModel
-    
-    var noteText: String { get set }
-    var dateCreated: Date? { get set }
-    var dateUpdated: Date? { get set }
-    var characterNote: CharacterNoteType? { get set }
-}
-
 @objc(Note)
 public class Note: NSManagedObject, NoteModel {
     @nonobjc public class func fetchRequest() -> NSFetchRequest<Note> {
@@ -30,16 +21,4 @@ public class Note: NSManagedObject, NoteModel {
     @NSManaged public var dateUpdated: Date?
     @NSManaged public var characterNote: CharacterNote?
 }
-
-public class MockNote: NoteModel, ObservableObject {
-    
-    var noteText: String = ""
-    
-    var dateCreated: Date?
-    
-    var dateUpdated: Date?
-    
-    var characterNote: MockCharacterNote?
-}
-
 
