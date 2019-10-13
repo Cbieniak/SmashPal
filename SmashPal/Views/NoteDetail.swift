@@ -21,7 +21,7 @@ struct NoteDetail<T: NoteModel>: View {
                 }.lineLimit(0)
                 Spacer()
             }.padding(8)
-        }.navigationBarTitle("Against \(note.characterNote?.villan.name ?? "")")
+        }.navigationBarTitle("Against \(note.characterNote?.villan?.name ?? "")")
     }
 }
 
