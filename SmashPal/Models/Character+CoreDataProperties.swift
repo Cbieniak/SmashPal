@@ -13,8 +13,10 @@ import CoreData
 
 extension Character {
 
-    @nonobjc public class func charFetchRequest() -> NSFetchRequest<Character> {
-        return NSFetchRequest<Character>(entityName: "Character")
+    @nonobjc public class func charFetchRequest(with sortDescriptors: [NSSortDescriptor]) -> NSFetchRequest<Character> {
+        let fr = NSFetchRequest<Character>(entityName: "Character")
+        fr.sortDescriptors = sortDescriptors
+        return fr
     }
 
     @NSManaged public var name: String?

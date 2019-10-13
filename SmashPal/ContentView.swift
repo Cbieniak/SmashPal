@@ -13,19 +13,15 @@ struct ContentView: View {
     @Environment(\.managedObjectContext) var managedObjectContext
     
     var body: some View {
-        
-        let fr = Character.charFetchRequest()
-        let result = try? managedObjectContext.fetch(fr)
-        let characters = result ?? []
         return NavigationView {
-            CharacterList(characters: characters)
+            CharacterList()
         }.navigationBarTitle(Text("Heroes"))
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        CharacterList(characters: [])
+        CharacterList()
     }
 }
 
@@ -41,10 +37,10 @@ struct CharacterRow: View {
 
 struct CharacterList: View {
         
-    var characters: [Character]
+    @FetchRequest(fetchRequest: Character.charFetchRequest(with: [NSSortDescriptor(keyPath: \Character.name, ascending: true)])) var characters
 
     var body: some View {
-        List(characters, rowContent: { character in
+        List(characters, id: \.self, rowContent: { character in
             NavigationLink(destination: CharacterNoteList(characterNotes: (character.heroNotes.map({ Array($0) }) ?? []).compactMap { $0 as? CharacterNote })) {
                 return CharacterRow(character: character)
             }

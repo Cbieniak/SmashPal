@@ -77,7 +77,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     /// XXXXXX
     
     func seedIfRequired(_ context: NSManagedObjectContext) throws {
-        let fr = Character.charFetchRequest()
+        let fr = Character.charFetchRequest(with: [])
 //        let allItems = try? context.fetch(fr)
 //        allItems?.forEach {
 //            context.delete($0)
