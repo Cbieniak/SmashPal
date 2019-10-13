@@ -14,10 +14,10 @@ struct CharacterList: View {
 
     var body: some View {
         List(characters, id: \.self, rowContent: { character in
-            NavigationLink(destination: CharacterNoteList(characterNotes: (character.heroNotes.map({ Array($0) }) ?? []).compactMap { $0 as? CharacterNote })) {
+            NavigationLink(destination: CharacterNoteList<Character, CharacterNote>(character: character)) {
                 return CharacterRow(character: character)
             }
-        })
+        }).navigationBarTitle("Hero")
     }
 }
 

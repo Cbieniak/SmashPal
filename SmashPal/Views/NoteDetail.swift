@@ -16,17 +16,25 @@ struct NoteDetail<T: NoteModel>: View {
     var body: some View {
         return HStack {
             VStack {
+                TitleView(heroName: note.characterNote?.hero?.name,
+                          villianName: note.characterNote?.villan?.name)
                 TextField("Details", text: $note.noteText) {
                     try? self.managedObjectContext.save()
                 }.lineLimit(0)
                 Spacer()
-            }.padding(8)
-        }.navigationBarTitle("Against \(note.characterNote?.villan?.name ?? "")")
+            }.padding()
+        }
     }
 }
 
 struct NoteDetail_Previews: PreviewProvider {
     static var previews: some View {
-        NoteDetail(note: MockNote())
+        
+        let mockNote = MockNote()
+        mockNote.noteText = "Test of data"
+        mockNote.characterNote = MockCharacterNote(id: UUID().uuidString,
+                                                   hero: MockCharacter(name: "Good guy"),
+                                                   villan: MockCharacter(name: "Bad guy"))
+        return NoteDetail(note: mockNote)
     }
 }
